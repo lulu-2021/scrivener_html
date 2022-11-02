@@ -1,7 +1,7 @@
 defmodule ScrivenerHtml.Mixfile do
   use Mix.Project
 
-  @version "1.8.3"
+  @version "1.8.4"
   def project do
     [
       app: :scrivener_html,
@@ -48,7 +48,7 @@ defmodule ScrivenerHtml.Mixfile do
   defp deps do
     [
       {:scrivener, "~> 1.2 or ~> 2.0"},
-      {:phoenix_html, "~> 2.11"},
+      {:phoenix_html, "~> 3.1"},
       {:phoenix, "~> 1.5.0", optional: true},
       {:plug, "~> 1.10"},
       {:ex_doc, "~> 0.19", only: :dev},
