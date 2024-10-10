@@ -1,12 +1,12 @@
 defmodule ScrivenerHtml.Mixfile do
   use Mix.Project
 
-  @version "1.8.4"
+  @version "1.8.5"
   def project do
     [
       app: :scrivener_html,
       version: @version,
-      elixir: "~> 1.9",
+      elixir: "~> 1.14.5",
       name: "scrivener_html",
       source_url: "https://github.com/mgwidmann/scrivener_html",
       homepage_url: "https://github.com/mgwidmann/scrivener_html",
@@ -47,9 +47,9 @@ defmodule ScrivenerHtml.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:scrivener, "~> 1.2 or ~> 2.0"},
-      {:phoenix_html, "~> 3.1"},
-      {:phoenix, "~> 1.6.14", optional: true},
+      {:scrivener, "~> 2.7.2"},
+      {:phoenix_html, "~> 4.1"},
+      {:phoenix, "~> 1.7.14", optional: true},
       {:plug, "~> 1.10"},
       {:ex_doc, "~> 0.19", only: :dev},
       {:earmark, "~> 1.1", only: :dev}
